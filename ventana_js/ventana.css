@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.ventana{
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+section.ventana  .text_simple{
+    width: 100%;
+    margin: 4rem 0 1rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.171);
+}
+section.ventana  .div_form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.newAccount_box_form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.newAccount_box_form form{
+    width: 100%;
+    padding-top: 3rem;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.newAccount_box_form form div{
+    width: 90%;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.newAccount_box_form form div label{
+    width: 20%;
+    text-align: left;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.377);
+}
+.newAccount_box_form form div input{
+    outline-color: rgb(109, 184, 255);
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: solid 0.1px rgb(219, 219, 219);
+    border-radius: 4px;
+    /* background-color: rgba(255, 255, 255, 0.89); */
+    background-color: rgb(255, 255, 255);
+
+}
+.newAccount_box_form form div input::placeholder{
+    /* color: rgba(0, 0, 0, 0.171); */
+    color: rgba(143, 143, 143, 0.288);
+}
+.newAccount_box_form form div button{
+    width: 30%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color:  rgb(19, 169, 255);
+    font-size: 2rem;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+}
+.newAccount_box_form form div button:hover{
+    background-color: rgb(19, 113, 255);
+}
+.newAccount_box_form button.buttonCancel{
+    width: 100px;
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(243, 243, 243);
+    color:  rgba(0, 0, 0, 0.377);
+}
+.newAccount_box_form button.buttonCancel:hover{
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(255, 14, 14);
+    color: white;
+
+
+}
+@media (max-width: 400px){
+    section.ventana{
+        width: 100%;
+        height: auto;
+    
+    }
+    section.ventana  .text_simple{
+        width: 100%;
+        margin: 3rem 0 1rem;
+        font-size: 3rem;
+        
+    }
+    div.newAccount_box_form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newAccount_box_form form div{
+        margin: 1rem 0;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .newAccount_box_form form div label{
+        width: 100%;
+        text-align: left;
+        font-size: 1.6rem;
+    }
+    .newAccount_box_form form div input{
+        outline-color: rgb(109, 184, 255);
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+    
+    }
+    .newAccount_box_form form div button{
+        font-size: 1.6rem;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-weight: 600;
+    }
+    .newAccount_box_form button.buttonCancel{
+        width: 20%;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,157 @@
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ html{
+     font-size: 62.5%;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ body section.login_section{
+     background-color: rgb(255, 255, 255);
+     height: 100vh;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 5rem;
+ }
+ div.slide_message{
+     width: 50%;
+     /* background-color: rgb(255, 255, 255); */
+     text-align: center;
+     font-size: 2rem;
+ }
+ div.slide_message p.text_greetingMessage a{
+     text-decoration: none;
+     border-bottom: solid .5px rgb(219, 219, 219);
+ }
+ div.slide_loginForm{
+     width: 50%;
+     font-size: 2rem;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ form.loginbox_form{
+     width: 100%;
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     padding: 0 1rem 0 ;
+ }
+ div.buttons_box_form{
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+ }
+ .button_signIn, .button_signUp{
+     font-size: 1.6rem;
+     background-color: rgb(243, 243, 243);
+     border-radius: 8px 8px 0 0;
+     border: solid 0.1px rgb(219, 219, 219);
+     border-bottom: none;
+     margin: 0 2rem;
+     padding: .5rem 1rem;
+     color: rgba(0, 0, 0, 0.377);
+ }
+ .button_signUp{
+     font-size: 1.6rem;
+     color:  rgb(255, 255, 255);
+     background-color:  rgb(19, 169, 255);
+     outline: none;
+ }
+ .button_signUp:hover{
+    background-color: rgb(19, 113, 255);
+ }
+ div.signIn_form{
+     display: flex;
+     flex-flow: column nowrap;
+     padding: 3rem 2rem ;
+     background-color: rgb(243, 243, 243);
+     border: solid 0.1px rgb(219, 219, 219);
+     border-radius: 8px 8px;
+ }
+ .signIn_form input{
+     outline-color: rgb(109, 184, 255);
+     border: solid 0.1px rgb(219, 219, 219);
+     margin-bottom: 2rem;
+     font-size: 2rem;
+     padding: 1.5rem;
+     border-radius: 4px;
+ }
+ .signIn_form label{
+     color: rgba(0, 0, 0, 0.377);;
+ }
+ #submit_button{
+     background-color: rgba(19, 169, 255);
+     width: 40%;
+     border-radius: 6px;
+     color: white;
+     font-weight: 600;
+ }
+ #submit_button:hover{
+     background-color: rgb(19, 113, 255);
+ }
+.forget_password a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+ footer{
+     font-size: 1.4rem;
+     text-align: right;
+ }
+ 
+ @media (max-width:500px){
+    body section.login_section{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+    div.slide_message{
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+    div.slide_loginForm{
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    div.signIn_form{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 3rem 1rem ;
+    }
+    .signIn_form input{
+        font-size: 1.7rem;
+        padding: .5rem;
+    }
+    div.buttons_box_form{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .button_signIn, .button_signUp{
+        font-size: 1.1rem;
+        margin: 0 .3rem;
+        padding: .5rem .3rem;
+        color: rgba(0, 0, 0, 0.377);
+    }
+    .button_signUp{
+        font-size: 1.1rem;
+        color:  rgb(255, 255, 255);
+        background-color:  rgb(19, 169, 255);
+        outline: none;
+    }
+    .forget_password a{
+        font-size: 1.1rem;
+    }
+ }
