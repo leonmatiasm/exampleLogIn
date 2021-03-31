@@ -1,4 +1,4 @@
-#Página de iniciar sesión o registrar nuevo usurario
+<h1>Página de iniciar sesión o registrar nuevo usurario</h1>
 ---
 Es una practica que hice con HTML, CSS y Javacript.
 <h3>Iniciar sesión</h3>
