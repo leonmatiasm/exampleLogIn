@@ -1,5 +1,5 @@
 <h1>Página de iniciar sesión o registrar nuevo usurario</h1>
----
+<hr>
 Es una practica que hice con HTML, CSS y Javacript.
 <h3>Iniciar sesión</h3>
 <img src="https://user-images.githubusercontent.com/43658425/113092291-f670fd80-91aa-11eb-9a9d-a988aa5cae07.png">
